@@ -3,10 +3,10 @@ import SocialLinks from "./SocialLinks"
 const Form = () => {
   return (
     <>
-      {/* make the wrapper relative so absolutely positioned children are anchored to this 1536px-wide container */}
+
       <div className="relative max-w-[1536px] mx-auto">
 
-        {/* this will now be positioned relative to the wrapper above, so on >1536px screens it stays put */}
+
         <div className="map absolute right-[330px] mt-[78px]">
           <iframe
             className="w-[397px] h-[510px]"
