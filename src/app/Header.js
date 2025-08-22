@@ -50,7 +50,7 @@ const Header = () => {
 
         {/* Mobile Nav (below md) */}
         {open && (
-          <nav className="md:hidden px-4 pb-4 md:mx-[50px] lg:mx-[150px] xl:mx-[250px] bg-emerald-500 ">
+          <nav className="md:hidden px-4 pb-4 md:mx-[50px] lg:mx-[150px] xl:mx-[250px] bg-[#DEEDEA] ">
             <div className="flex flex-col space-y-3">
               <h1>Home</h1>
               <h1>Features</h1>

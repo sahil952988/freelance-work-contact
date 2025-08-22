@@ -5,10 +5,10 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="max-w-[1536px] mx-auto">
-      <footer className=" text-gray-700 py-10 px-6 mt-10">
+      <footer className="text-gray-700 py-10 px-6 md:px-12 lg:px-[200px] xl:px-[230px] mt-10">
 
         {/* Top Section */}
-        <div className="px-[230px] grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Logo and Description */}
           <div>
             <Image
@@ -18,7 +18,7 @@ export default function Footer() {
               height={36}
               className="object-cover"
             />
-            <p className="w-[402px] pt-[18px]">
+            <p className="max-w-md pt-4 text-sm md:text-base">
               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex.
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
 
           {/* Solutions + Company + Community */}
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-10">
             {/* Solutions */}
             <div>
               <h3 className="font-semibold text-gray-900 mb-3">Solutions</h3>
@@ -60,16 +60,18 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <hr className=" border-gray-300 border-[1.5px] mx-[230px] my-[50px]" />
+        <hr className="border-gray-300 border-[1.5px] my-10" />
 
         {/* Bottom Section */}
-        <div className=" px-[230px] flex justify-between text-[#595959] ">
-          <p>Copyright © 2025 everythinggreen. All Rights Reserved</p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" className="hover:text-green-600"><FaFacebookF /></a>
-            <a href="#" className="hover:text-green-600"><FaTwitter /></a>
-            <a href="#" className="hover:text-green-600"><FaInstagram /></a>
-            <a href="#" className="hover:text-green-600"><FaYoutube /></a>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[#595959]">
+          <p className="text-center md:text-left text-sm md:text-base">
+            Copyright © 2025 everythinggreen. All Rights Reserved.
+          </p>
+          <div className="flex space-x-5">
+            <a href="#" className="hover:text-green-600 text-lg"><FaFacebookF /></a>
+            <a href="#" className="hover:text-green-600 text-lg"><FaTwitter /></a>
+            <a href="#" className="hover:text-green-600 text-lg"><FaInstagram /></a>
+            <a href="#" className="hover:text-green-600 text-lg"><FaYoutube /></a>
           </div>
         </div>
       </footer>
